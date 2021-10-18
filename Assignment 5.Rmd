@@ -1,5 +1,5 @@
 ---
-title: "'Number and colour composition of nest lining feathers predict eggshell bacterial community in barn swallow nests: an experimental study'"
+title: "Red-legged cormorant uses plastic as nest material in an artifical breeding colony of Atacama Desert coast"
 output: html_document
 ---
 
@@ -7,11 +7,16 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Introduction
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Methods
+
+## Results and Conclusion 
+
 
 ```{r cars}
 summary(cars)
