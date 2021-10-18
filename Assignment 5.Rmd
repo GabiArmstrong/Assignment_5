@@ -9,17 +9,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+As the amount of plastic debris in both marine and terrestial areas is increasing it imposes dangers to birds by either entanglement or ingestion. Along with this, plastic debris has also been observed in nest as a nesting material among various species of birds. This paper explores the use of various plastics as nest material among red-legged cormorants colonies located in two major seaport areas in Northern Chile. 
 
 ## Methods
+
+The researchers collected their data from 18 abandoned nests located along the two seaport areas. 
 
 ## Results and Conclusion 
 
 
 ```{r cars}
-summary(cars)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(readxl)
+Assignment_5data_ <- read_excel("Assignment_5data .xlsx", 
+    col_types = c("text", "numeric"))
+View(Assignment_5data_)
+view(Assignment_5data_)
+ggplot(data = Assignment_5data_, mapping = aes(x = Plastic_type, y = Percentage_of_plastic)) + geom_point() + labs(x = "Type of plastic", y = "Percentage of plastic (%)") + scale_y_continuous(limits = c(0, 50), breaks = c(0, 10, 20, 30, 40, 50), labels = c('0', '10', '20', '30', '40', '50'))
 ```
 
 ## Including Plots
