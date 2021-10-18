@@ -17,7 +17,7 @@ The researchers collected their data from 18 abandoned nests (10% of the total n
 
 ## Results and Conclusion 
 
-The results from the experiment showed that there was not a significant difference between the nests both at the same and separate port that was examined. This shows that the plastic debris was pretty much evenly distributed as nesting material among the nests observed. The most dominate plastic debri types that were discovered was polypropylene bulk bag fibers at 35%. The second most abundant plastic was plastic bags at 33%, with fishing gear coming in third at 10%, and fishing ropes at 8%. When examining the color of the plastic the most abundance color was white (68%), with green (10%) being second and black (8%) in third. Although it hasn't been studied it's possible that there is a preference among the plastic debri type and color that the cormorants choose for their nesting materials. 
+The results from the experiment showed that there was not a significant difference between the nests both at the same and separate port that was examined. This shows that the plastic debris was pretty much evenly distributed as nesting material among the nests observed. The most dominate plastic debris types that were discovered was polypropylene bulk bag fibers at 35%. The second most abundant plastic was plastic bags at 33%, with fishing gear coming in third at 10%, and fishing ropes at 8%. When examining the color of the plastic the most abundance color was white (68%), with green (10%) being second and black (8%) in third. Although it hasn't been studied it's possible that there's a preference among the plastic debris type and color that the cormorants choose for their nesting materials. Another variable that could be affecting what plastics were incorporated could be because of the availability of plastics that the cormorants could choose from. It's possible that the plastics that were choose and observed more in nests could be what was the most available. 
 
 ```{r}
 library(tidyverse)
@@ -31,12 +31,8 @@ view(Assignment_5data_)
 ggplot(data = Assignment_5data_, mapping = aes(x = Plastic_type, y = Percentage_of_plastic)) + geom_point() + labs(x = "Type of plastic", y = "Percentage of plastic (%)") + scale_y_continuous(limits = c(0, 50), breaks = c(0, 10, 20, 30, 40, 50), labels = c('0', '10', '20', '30', '40', '50'))
 ```
 
-## Including Plots
+Figure 1: The average percentage of plastic (%) of each type of plastic (domestic, fishing and industrial) found in the red-legged cormorant nests for both the GNL and ENAEX nest sites.  
 
-You can also embed plots, for example:
+## References
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Garcia-Cegarra, A., Ramirez, R., & Orrego, R. (2020). Red-legged cormorant uses plastic as nest material in an artificial breeding colony of Atacama Desert coast. Marine Pollution Bulletin, 160, 111632.
