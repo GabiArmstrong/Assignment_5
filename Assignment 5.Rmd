@@ -9,24 +9,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-As the amount of plastic debris in both marine and terrestial areas is increasing it imposes dangers to birds by either entanglement or ingestion. Along with this, plastic debris has also been observed in nest as a nesting material among various species of birds. This paper explores the use of various plastics as nest material among red-legged cormorants colonies located in two major seaport areas in Northern Chile. 
+As the amount of plastic debris in both marine and terrestial areas is increasing it imposes dangers to birds by either entanglement or ingestion. Along with this, plastic debris has also been observed in nests as a nesting material among various species of birds. This paper explores the use of various plastics as nest material among red-legged cormorants colonies located in two major seaport areas in Northern Chile. 
 
 ## Methods
 
-The researchers collected their data from 18 abandoned nests (10% of the total nests) located along the two seaport areas of GNL (Liquid Natural Gas Company) and ENAEX (National Company of Explosives). First they examined the type of plastic debris that was found, the color the plastic was and where it came from. The plastic was separated based on whether the plastic orginally came from fishing use (e.g., fishing rope, line, netting, rope fiber), domestic use (e.g., bags, fabric, solid plastic), or industrial use (e.g., rope, big-bag fragments/fibers, cables and cable ties).
+The researchers collected their data from 18 abandoned nests (10% of the total nests) located along the two seaport areas of GNL (Liquid Natural Gas Company) and ENAEX (National Company of Explosives). They examined the type of plastic debris that was found, the color the plastic was and where it came from. The plastic was separated based on whether the plastic orginally came from fishing use (e.g., fishing rope, line, netting, rope fiber), domestic use (e.g., bags, fabric, solid plastic), or industrial use (e.g., rope, big-bag fragments/fibers, cables and cable ties).
 
 ## Results and Conclusion 
 
-The results from the experiment showed that there was not a significant difference between the nests both at the same and separate port that was examined. This shows that the plastic debris was pretty much evenly distributed as nesting material among the nests observed. The most dominate plastic debris types that were discovered was polypropylene bulk bag fibers at 35%. The second most abundant plastic was plastic bags at 33%, with fishing gear coming in third at 10%, and fishing ropes at 8%. When examining the color of the plastic the most abundance color was white (68%), with green (10%) being second and black (8%) in third. Although it hasn't been studied it's possible that there's a preference among the plastic debris type and color that the cormorants choose for their nesting materials. Another variable that could be affecting what plastics were incorporated could be because of the availability of plastics that the cormorants could choose from. It's possible that the plastics that were choose and observed more in nests could be what was the most available. 
+The results from the experiment showed that there was not a significant difference between the nests both at the same and separate ports that were examined. This shows that the plastic debris was pretty much evenly distributed as nesting material among the nests observed. The most dominate plastic debris types that were discovered was polypropylene bulk bag fibers at 35%. The second most abundant plastic was plastic bags at 33%, with fishing gear coming in third at 10%, and fishing ropes at 8%. When examining the color of the plastic the most abundance color was white (68%), with green (10%) being second and black (8%) in third. Although it hasn't been studied, it's possible that there's a preference among the plastic debris type and color that the cormorants choose for their nesting materials. Another variable that could be affecting what plastics were incorporated could be because of the availability of plastics that the cormorants could choose from. It's possible that the plastics that was chosen and observed more in nests could be what was the most available to the cormorants. 
 
-```{r}
+```{r, echo=FALSE}
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
 library(readxl)
+
 Assignment_5data_ <- read_excel("Assignment_5data .xlsx", 
     col_types = c("text", "numeric"))
-View(Assignment_5data_)
 view(Assignment_5data_)
 ggplot(data = Assignment_5data_, mapping = aes(x = Plastic_type, y = Percentage_of_plastic)) + geom_point() + labs(x = "Type of plastic", y = "Percentage of plastic (%)") + scale_y_continuous(limits = c(0, 50), breaks = c(0, 10, 20, 30, 40, 50), labels = c('0', '10', '20', '30', '40', '50'))
 ```
